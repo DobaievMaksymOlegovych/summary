@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <people>
-  <person name="Максим" old="24" number="+380662244..." mail="Max@gmail.com" profesion="Будівельник" >
+  <person name="Максим" old="24" number="+380662244..." mail="Max@gmail.com" profesion="Будівельник" img='src="DSC_0839-2.jpg" alt="photo" style="width:1208px;height:1208px;"'>
   </person>
 
 </people>

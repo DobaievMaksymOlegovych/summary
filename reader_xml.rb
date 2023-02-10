@@ -11,10 +11,24 @@ doc.elements.each("people/person") do |item|
 	mail = item.attributes["mail"]
 	number = item.attributes["number"]
 	profesion = item.attributes["profesion"]
-	puts "Ім'я: #{name}
-Вік: #{old}
-Електронна почта: #{mail}
-Мобільний номер: #{number}
-Спеціальність: #{profesion}"
-end 
+	image = item.attributes["img"]
+ 
+a = "<!DOCTYPE html>
+<html>
+<body>
+	<h1>#{name}</h1>
+	<p>Вік #{old} роки</p>
+	<p>Почта: #{mail}</p>
+	<p>Спецільність: #{profesion}</p>
+	<p>Номер: #{number}</p>
+	<img #{image}>	
+	</img>
+</body>
+</html>"
+
+
+file = File.new("#{name}.html", "a+")
+file.puts(a)
 file.close
+end
+puts 'Візитку створено)))'
